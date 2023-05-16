@@ -1,0 +1,25 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"dashboard"/}
+
+#{list items:stations, as:'station'}
+<section class="content box">
+    <div class="column">
+        <div class="content box notification is-dark">
+    <h1 class="title is-white">
+      ${station.name}
+    </h1>
+    </div>
+        <!--
+        #{latestreadings station:station/}
+        #{listreadings station:station/}
+        #{addreading station:station/}
+        -->
+        <a href="/stations/${station.id}" class="icon has-text-info">
+            <i class="fas fa-folder"></i>
+        </a>
+    </div>
+</section>
+#{/list}
+#{addstation /}

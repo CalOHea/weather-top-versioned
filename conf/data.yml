@@ -1,0 +1,39 @@
+Reading(r1):
+  code: 600
+  temperature: 12.9
+  windSpeed: 45
+  windDirection: 62.33
+  pressure: 1000
+
+Reading(r2):
+  code: 300
+  temperature: 8.5
+  windSpeed: 13
+  windDirection: 11.26
+  pressure: 999
+
+Reading(r3):
+  code: 100
+  temperature: 22
+  windSpeed: 8
+  windDirection: 300.12
+  pressure: 1002
+
+Reading(r4):
+  code: 800
+  temperature: 27.9
+  windSpeed: 90
+  windDirection: 360
+  pressure: 1001
+
+Station(s1):
+  name: Lahinch
+  readings:
+  - r1
+  - r2
+
+Station(s2):
+  name: Rossaviel
+  readings:
+  - r3
+  - r4

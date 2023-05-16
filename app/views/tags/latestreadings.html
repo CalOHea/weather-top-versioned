@@ -1,0 +1,32 @@
+#{list items:_station.latestReading(), as:'reading'}
+<div class="tile is-ancestor">
+    <div class="tile is-parent">
+        <div class="tile is-child notification is-dark box">
+            <p class="subtitle">Weather</p>
+            <p>${reading.conditions()}</p>
+        </div>
+    </div>
+    <div class="tile is-parent">
+        <div class="tile is-child notification is-dark box">
+            <p class="subtitle">Temp</p>
+            <p>${reading.temperature} C</p>
+            <p>${reading.fahrenheit()} F</p>
+        </div>
+    </div>
+    <div class="tile is-parent">
+        <div class="tile is-child notification is-dark box">
+            <p class="subtitle">Wind</p>
+            <p>${reading.beaufort()} bft</p>
+            <p>${reading.compassDirection()}</p>
+            <p>Feels Like</p>
+            <p>${reading.windChill()}</p>
+        </div>
+    </div>
+    <div class="tile is-parent">
+        <div class="tile is-child notification is-dark box">
+            <p class="subtitle">Pressure</p>
+            <p>${reading.pressure} hpa</p>
+        </div>
+    </div>
+</div>
+#{/list}
