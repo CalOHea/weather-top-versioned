@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae44a73-4c4a-42c7-ad44-db635ff91392" name="Changes" comment="" />
+    <list default="true" id="6ae44a73-4c4a-42c7-ad44-db635ff91392" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/views/tags/addreading.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/addreading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-top-versioned.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top-versioned.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-top-versioned.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top-versioned.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684272317956</updated>
-      <workItem from="1684272320026" duration="655000" />
+      <workItem from="1684272320026" duration="1385000" />
     </task>
     <servers />
   </component>
