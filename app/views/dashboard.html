@@ -23,3 +23,11 @@
 </section>
 #{/list}
 #{addstation /}
+#{if flash.error}
+<div class ="column is-one-third">
+  <div class="content box is-rounded notification is-danger is-light">
+    ${flash.error}
+  </div>
+</div>
+#{/if}
+

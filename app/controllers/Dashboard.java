@@ -23,12 +23,17 @@ public class Dashboard extends Controller
   }
 
   public static void addStation (String name) {
-    Logger.info("Adding a new station");
-    Member member= Accounts.getLoggedInMember();
-    Station station = new Station (name);
-    member.stations.add(station);
-    member.save();
-    redirect ("/dashboard");
+    if((name == null) || (name.trim().isEmpty())) {
+      flash("error", "Please enter a Station Name");
+      redirect("/dashboard");
+    } else {
+      Logger.info("Adding a new station");
+      Member member= Accounts.getLoggedInMember();
+      Station station = new Station (name);
+      member.stations.add(station);
+      member.save();
+      redirect ("/dashboard");
+    }
   }
 
 }
