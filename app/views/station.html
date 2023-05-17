@@ -4,9 +4,13 @@
 #{menu id:"dashboard"/}
 
 <section class="content box">
-      <h1 class="title is-white">
-        ${station.name}
-      </h1>
+    <div class="content box notification is-dark">
+        <p class="subtitle">
+            ${station.name}
+        </p>
+        <p>Lng: ${station.longitude}</p>
+        <p>Lat: ${station.latitude}</p>
+    </div>
     #{latestreadings station:station/}
     #{listreadings station:station/}
     #{addreading station:station/}

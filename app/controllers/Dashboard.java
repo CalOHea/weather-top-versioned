@@ -22,14 +22,14 @@ public class Dashboard extends Controller
     render ("dashboard.html", stations);
   }
 
-  public static void addStation (String name) {
+  public static void addStation (String name, double longitude, double latitude) {
     if((name == null) || (name.trim().isEmpty())) {
       flash("error", "Please enter a Station Name");
       redirect("/dashboard");
     } else {
       Logger.info("Adding a new station");
       Member member= Accounts.getLoggedInMember();
-      Station station = new Station (name);
+      Station station = new Station (name, longitude, latitude);
       member.stations.add(station);
       member.save();
       redirect ("/dashboard");

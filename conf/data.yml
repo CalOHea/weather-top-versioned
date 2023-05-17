@@ -42,12 +42,16 @@ Reading(r6):
 
 Station(s1):
   name: Lahinch
+  longitude: 52.934
+  latitude: 9.344
   readings:
   - r1
   - r2
 
 Station(s2):
-  name: Rossaviel
+  name: Ros an Mhil
+  longitude: 53.271
+  latitude: 9.548
   readings:
   - r3
   - r4

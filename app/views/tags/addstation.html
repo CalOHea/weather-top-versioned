@@ -1,8 +1,22 @@
 <form action="/dashboard/addstation" method="POST">
-  <div class="field">
-    <label class="label">Name</label>
-    <div class="control">
-      <input class="input is-rounded" placeholder="Name" type="text" name="name">
+  <div class="columns">
+    <div class="field column">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input is-rounded" placeholder="Name" type="text" name="name">
+      </div>
+    </div>
+    <div class="field column">
+      <label class="label">Longitude</label>
+      <div class="control">
+        <input class="input is-rounded" placeholder="00.000 deg" type="number" name="longitude" step="0.001" min="-180" max="180">
+      </div>
+    </div>
+    <div class="field column">
+      <label class="label">Latitude</label>
+      <div class="control">
+        <input class="input is-rounded" placeholder="00.000 deg" type="number" name="latitude" step="0.001" min="-90" max="90">
+      </div>
     </div>
   </div>
   <div class="field mt-4">
