@@ -43,6 +43,14 @@
       </div>
     </div>
   </div>
+  <div class ="column is-full">
+    #{if flash.error}
+    <div class="field">
+      <div class="content box is-rounded notification is-danger is-light">
+        ${flash.error}
+      </div>
+    </div>
+    #{/if}
   <div class="field mt-4">
     <div class="control">
       <button class="button is-info">Submit Report</button>
