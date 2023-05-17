@@ -24,6 +24,13 @@
             </span>
           </div>
         </div>
+        <div class ="field">
+          #{if flash.error}
+          <div class="content box is-rounded notification is-danger is-light">
+            ${flash.error}
+          </div>
+          #{/if}
+        </div>
         <button class="button is-rounded is-link is-info">Login</button>
       </form>
     </div>

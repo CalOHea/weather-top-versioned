@@ -14,10 +14,17 @@ public class Accounts extends Controller {
     }
 
     public static void register(String firstName, String lastName, String email, String password) {
-        Logger.info("Registering new user" + email);
-        Member member = new Member(firstName, lastName, email, password);
-        member.save();
-        redirect("/");
+        if ((firstName == null) || (lastName == null) || (email == null) || (password == null)
+            || (firstName.trim().isEmpty()) || (lastName.trim().isEmpty()) || (email.trim().isEmpty())
+            || (password.trim().isEmpty())) {
+            flash("error", "Please fill out all fields");
+            redirect("/signup");
+        } else {
+            Logger.info("Registering new user" + email);
+            Member member = new Member(firstName, lastName, email, password);
+            member.save();
+            redirect("/");
+        }
     }
 
     public static void authenticate(String email, String password) {
@@ -30,6 +37,7 @@ public class Accounts extends Controller {
             redirect("/dashboard");
         } else {
             Logger.info("Authentication failed");
+            flash("error", "Invalid User Details");
             redirect("/login");
         }
     }

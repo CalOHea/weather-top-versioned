@@ -47,6 +47,15 @@
         </div>
         <button class="button is-rounded is-link is-info">Submit</button>
       </form>
+      <div class ="column is-full">
+        #{if flash.error}
+        <div class="field">
+          <div class="content box is-rounded notification is-danger is-light">
+            ${flash.error}
+          </div>
+        </div>
+        #{/if}
+      </div>
     </div>
     <div class="column is-half">
       <figure class="image is-square">
