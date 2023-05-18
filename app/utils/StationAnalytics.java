@@ -7,9 +7,6 @@ import java.util.List;
 
 public class StationAnalytics {
     public String name;
-    //public int code;
-
-
 
     public static double celsiusToFahrenheit(double celsius) {
         double fahrenheit;
@@ -53,7 +50,6 @@ public class StationAnalytics {
     }
 
     public static String conditions (int code) {
-        //this.code = code;
         String conditions;
 
         if (code == 100) {
@@ -77,6 +73,32 @@ public class StationAnalytics {
         }
         return conditions;
     }
+
+    public static String conditionsIcon (int code) {
+        String conditionsIcon;
+
+        if (code == 100) {
+            conditionsIcon = "fas fa-solid fa-sun fa-2xl";
+        } else if (code == 200) {
+            conditionsIcon = "fas fa-solid fa-cloud-sun fa-2xl";
+        } else if (code == 300) {
+            conditionsIcon = "fas fa-solid fa-cloud fa-2xl";
+        } else if (code == 400) {
+            conditionsIcon = "fas fa-solid fa-cloud-showers-water fa-2xl";
+        } else if (code == 500) {
+            conditionsIcon = "fas fa-solid fa-cloud-showers-heavy fa-2xl";
+        } else if (code == 600) {
+            conditionsIcon = "fas fa-solid fa-cloud-rain fa-2xl";
+        } else if (code == 700) {
+            conditionsIcon = "fas fa-solid fa-snowflake fa-2xl";
+        } else if (code == 800) {
+            conditionsIcon="fas fa-solid fa-cloud-bolt fa-2xl";
+        } else {
+            conditionsIcon = "fas fa-solid fa-bug fa-2xl";
+        }
+        return conditionsIcon;
+    }
+
 
     public static String compassDirection (double windDirection) {
         String compassDirection;
@@ -112,7 +134,7 @@ public class StationAnalytics {
         } else if (windDirection > 326.25 && windDirection <= 348.75) {
             compassDirection = "North North West";
         } else if (windDirection > 348.75 && windDirection <= 360.00
-                || windDirection > 0.00 && windDirection <= 11.25) {
+                || windDirection >= 0.00 && windDirection <= 11.25) {
             compassDirection = "North";
         } else {
             compassDirection = "Invalid Wind Direction";

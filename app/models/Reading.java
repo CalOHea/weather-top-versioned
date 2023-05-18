@@ -25,6 +25,10 @@ public class Reading extends Model {
         return StationAnalytics.conditions(code);
     }
 
+    public String conditionsIcon() {
+        return StationAnalytics.conditionsIcon(code);
+    }
+
     public double fahrenheit() {
         return StationAnalytics.celsiusToFahrenheit(temperature);
     }

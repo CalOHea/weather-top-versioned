@@ -2,30 +2,66 @@
 <div class="tile is-ancestor">
     <div class="tile is-parent">
         <div class="tile is-child notification is-dark box">
-            <p class="subtitle">Weather</p>
-            <p>${reading.conditions()}</p>
+            <div class="columns">
+                <div class="column">
+                    <p class="subtitle">Weather</p>
+                    <p>${reading.conditions()}</p>
+                </div>
+                <div class="column">
+                    <span class="icon is-large">
+                        <i class="${reading.conditionsIcon()}"></i>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="tile is-parent">
         <div class="tile is-child notification is-dark box">
-            <p class="subtitle">Temp</p>
-            <p>${reading.temperature} C</p>
-            <p>${reading.fahrenheit()} F</p>
+            <div class="columns">
+                <div class="column">
+                    <p class="subtitle">Temp</p>
+                    <p>${reading.temperature} C</p>
+                    <p>${reading.fahrenheit()} F</p>
+                </div>
+                <div class="column">
+                    <span class="icon is-large">
+                        <i class="fas fa-solid fa-temperature-half fa-2xl"></i>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="tile is-parent">
         <div class="tile is-child notification is-dark box">
-            <p class="subtitle">Wind</p>
-            <p>${reading.beaufort()} bft</p>
-            <p>${reading.compassDirection()}</p>
-            <p>Feels Like</p>
-            <p>${reading.windChill()}</p>
+            <div class="columns">
+                <div class="column">
+                    <p class="subtitle">Wind</p>
+                    <p>${reading.beaufort()} bft</p>
+                    <p>${reading.compassDirection()}</p>
+                    <p>Feels Like</p>
+                    <p>${reading.windChill()}</p>
+                </div>
+                <div class="column">
+                    <span class="icon is-large">
+                        <i class="fas fa-solid fa-wind fa-2xl"></i>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="tile is-parent">
         <div class="tile is-child notification is-dark box">
-            <p class="subtitle">Pressure</p>
-            <p>${reading.pressure} hpa</p>
+            <div class="columns">
+                <div class="column">
+                    <p class="subtitle">Pressure</p>
+                    <p>${reading.pressure} hpa</p>
+                </div>
+                <div class="column">
+                    <span class="icon is-large">
+                        <i class="fas fa-solid fa-gauge fa-2xl"></i>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
