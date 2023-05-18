@@ -45,6 +45,30 @@ public class Reading extends Model {
         return StationAnalytics.windChill(windSpeed, temperature);
     }
 
+    public double minTemp() {
+        return StationAnalytics.calculateMin(temperature);
+    }
+
+    public double minSpeed() {
+        return StationAnalytics.calculateMin(windSpeed);
+    }
+
+    public double minPressure() {
+        return StationAnalytics.calculateMin(pressure);
+    }
+
+    public double maxTemp() {
+        return StationAnalytics.calculateMax(temperature);
+    }
+
+    public double maxSpeed() {
+        return StationAnalytics.calculateMax(windSpeed);
+    }
+
+    public double maxPressure() {
+        return StationAnalytics.calculateMax(pressure);
+    }
+
     public int getCode() {
         return code;
     }

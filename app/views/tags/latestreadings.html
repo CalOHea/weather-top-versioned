@@ -22,6 +22,8 @@
                     <p class="subtitle">Temp</p>
                     <p>${reading.temperature} C</p>
                     <p>${reading.fahrenheit()} F</p>
+                    <p>Min: ${reading.minTemp()}</p>
+                    <p>Max: ${reading.maxTemp()}</p>
                 </div>
                 <div class="column">
                     <span class="icon is-large">
@@ -40,6 +42,8 @@
                     <p>${reading.compassDirection()}</p>
                     <p>Feels Like</p>
                     <p>${reading.windChill()}</p>
+                    <p>Min: ${reading.minSpeed()}</p>
+                    <p>Max: ${reading.maxSpeed()}</p>
                 </div>
                 <div class="column">
                     <span class="icon is-large">
@@ -55,6 +59,8 @@
                 <div class="column">
                     <p class="subtitle">Pressure</p>
                     <p>${reading.pressure} hpa</p>
+                    <p>Min: ${reading.minPressure()}</p>
+                    <p>Max: ${reading.maxPressure()}</p>
                 </div>
                 <div class="column">
                     <span class="icon is-large">
