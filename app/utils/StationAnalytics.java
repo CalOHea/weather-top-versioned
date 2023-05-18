@@ -154,11 +154,13 @@ public class StationAnalytics {
 
     public static double calculateMin(double reading) {
         double minimum = reading - (reading * .2);
+        minimum = Math.round(minimum * 100.0) / 100.0;
         return minimum;
     }
 
     public static double calculateMax(double reading) {
         double maximum = reading + (reading * .2);
+        maximum = Math.round(maximum * 100.0) / 100.0;
         return maximum;
     }
 
