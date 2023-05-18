@@ -5,7 +5,7 @@
 
 <section class="content box">
     <div class="columns">
-        <div class="column is-one-quarter">
+        <div class="column is-half">
             <div class="content box notification is-dark">
                 <div class="columns">
                     <div class="column">
@@ -22,9 +22,10 @@
                     </div>
                 </div>
             </div>
+            #{latestreadings station:station/}
         </div>
-    </div>
-    #{latestreadings station:station/}
+        <div class="column is-half">
     #{listreadings station:station/}
     #{addreading station:station/}
+    </div>
 </section>
