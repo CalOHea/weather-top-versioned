@@ -27,13 +27,6 @@ public class Station extends Model {
         return name;
     }
 
-    /*
-    public static Reading latestReading(List<Reading> readings) {
-
-         Reading latestReading = readings.get(readings.size()-1);
-         return latestReading;
-    }
-     */
     public List<Reading> latestReading() {
         List<Reading> latestReadings = null;
         if (readings.size() > 0) {
