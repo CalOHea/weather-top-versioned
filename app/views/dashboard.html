@@ -5,45 +5,45 @@
 
 <section class="columns is-multiline">
   #{list items:stations, as:'station'}
-    <div class="column is-half">
-      <div class="content box">
-        <div class="columns is-multiline">
-          <div class="column is-full">
-            <div class="content box notification is-dark">
-              <div class="columns">
-                <div class="column">
-                  <h1 class="title">
-                    ${station.name}
-                  </h1>
-                  <p>Lng: ${station.longitude}</p>
-                  <p>Lat: ${station.latitude}</p>
-                </div>
-                <div class="column">
+  <div class="column is-half">
+    <div class="content box">
+      <div class="columns is-multiline">
+        <div class="column is-full">
+          <div class="content box notification is-dark">
+            <div class="columns">
+              <div class="column">
+                <h1 class="title">
+                  ${station.name}
+                </h1>
+                <p>Lng: ${station.longitude}</p>
+                <p>Lat: ${station.latitude}</p>
+              </div>
+              <div class="column">
                   <span class="icon is-large">
                     <i class="fas fa-regular fa-location-dot fa-2xl"></i>
                   </span>
-                </div>
               </div>
             </div>
           </div>
-          <div class="column is-full">
-            #{latestreadings station:station/}
-          </div>
-          <div class="column is-full">
-            <a href="/stations/${station.id}" class="icon has-text-info">
-              <i class="fas fa-folder"></i>
-                <a href="/dashboard/deletestation/${station.id}" class="icon has-text-danger">
-                  <i class="fas fa-trash"></i>
-                </a>
-          </div>
+        </div>
+        <div class="column is-full">
+          #{latestreadings station:station/}
+        </div>
+        <div class="column is-full">
+          <a href="/stations/${station.id}" class="icon has-text-info">
+            <i class="fas fa-folder"></i>
+            <a href="/dashboard/deletestation/${station.id}" class="icon has-text-danger">
+              <i class="fas fa-trash"></i>
+            </a>
         </div>
       </div>
     </div>
+  </div>
   #{/list}
 </section>
 #{addstation /}
 #{if flash.error}
-<div class ="column is-one-third">
+<div class="column is-one-third">
   <div class="content box is-rounded notification is-danger is-light">
     ${flash.error}
   </div>

@@ -4,28 +4,28 @@
 #{menu id:"dashboard"/}
 
 <section class="content box">
-    <div class="columns">
-        <div class="column is-half">
-            <div class="content box notification is-dark">
-                <div class="columns">
-                    <div class="column">
-                        <p class="subtitle">
-                            ${station.name}
-                        </p>
-                        <p>Lng: ${station.longitude}</p>
-                        <p>Lat: ${station.latitude}</p>
-                    </div>
-                    <div class="column">
-                        <span class="icon is-large">
-                            <i class="fas fa-regular fa-location-dot fa-2xl"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            #{latestreadings station:station/}
+  <div class="columns">
+    <div class="column is-half">
+      <div class="content box notification is-dark">
+        <div class="columns">
+          <div class="column">
+            <p class="subtitle">
+              ${station.name}
+            </p>
+            <p>Lng: ${station.longitude}</p>
+            <p>Lat: ${station.latitude}</p>
+          </div>
+          <div class="column">
+            <span class="icon is-large">
+              <i class="fas fa-regular fa-location-dot fa-2xl"></i>
+            </span>
+          </div>
         </div>
-        <div class="column is-half">
-    #{listreadings station:station/}
-    #{addreading station:station/}
+      </div>
+      #{latestreadings station:station/}
+    </div>
+    <div class="column is-half">
+      #{listreadings station:station/}
+      #{addreading station:station/}
     </div>
 </section>

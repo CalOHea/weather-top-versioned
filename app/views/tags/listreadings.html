@@ -1,4 +1,3 @@
-
 <table class="table is-striped is-bordered ">
   <thead>
   <tr>
@@ -10,29 +9,29 @@
   </tr>
   </thead>
   <tbody>
-    #{list items:_station.readings, as:'reading'}
-      <tr>
-        <td>
-          ${reading.code}
-        </td>
-        <td>
-          ${reading.temperature}
-        </td>
-        <td>
-          ${reading.windSpeed}
-        </td>
-        <td>
-          ${reading.windDirection}
-        </td>
-        <td>
-          ${reading.pressure}
-        </td>
-        <td>
-          <a href="/stations/${_station.id}/deletereading/${reading.id}" class="icon has-text-danger">
-            <i class="fas fa-trash"></i>
-          </a>
-        </td>
-      </tr>
-    #{/list}
+  #{list items:_station.readings, as:'reading'}
+  <tr>
+    <td>
+      ${reading.code}
+    </td>
+    <td>
+      ${reading.temperature}
+    </td>
+    <td>
+      ${reading.windSpeed}
+    </td>
+    <td>
+      ${reading.windDirection}
+    </td>
+    <td>
+      ${reading.pressure}
+    </td>
+    <td>
+      <a href="/stations/${_station.id}/deletereading/${reading.id}" class="icon has-text-danger">
+        <i class="fas fa-trash"></i>
+      </a>
+    </td>
+  </tr>
+  #{/list}
   </tbody>
 </table>

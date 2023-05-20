@@ -21,29 +21,31 @@
     <div class="field column is-half">
       <label class="label">Temperature</label>
       <div class="control">
-        <input class="input is-rounded" placeholder="00.00 C" type = "number" name="temperature" step="0.01">
+        <input class="input is-rounded" placeholder="00.00 C" type="number" name="temperature" step="0.01">
       </div>
     </div>
     <div class="field column is-half">
       <label class="label">Wind Speed</label>
       <div class="control">
-        <input class="input is-rounded" placeholder="00.00 K/mH" type = "number" name="windSpeed" step="0.01" min="0" max="117">
+        <input class="input is-rounded" placeholder="00.00 K/mH" type="number" name="windSpeed" step="0.01" min="0"
+               max="117">
       </div>
     </div>
     <div class="field column is-half">
       <label class="label">Wind Direction</label>
       <div class="control">
-        <input class="input is-rounded" placeholder="000.00 deg" type = "number" name="windDirection" step="0.01" min="0" max="360">
+        <input class="input is-rounded" placeholder="000.00 deg" type="number" name="windDirection" step="0.01" min="0"
+               max="360">
       </div>
     </div>
     <div class="field column is-half">
       <label class="label">Pressure</label>
       <div class="control">
-        <input class="input is-rounded" placeholder="000 hpa" type = "number" name="pressure">
+        <input class="input is-rounded" placeholder="000 hpa" type="number" name="pressure">
       </div>
     </div>
   </div>
-  <div class ="column is-full">
+  <div class="column is-full">
     #{if flash.error}
     <div class="field">
       <div class="content box is-rounded notification is-danger is-light">
@@ -54,7 +56,7 @@
   </div>
   <div class="field mt-4">
     <div class="control">
-      <button class="button is-rounded is-info">Submit Report</button>
+      <button class="button is-rounded is-dark">Submit Report</button>
     </div>
   </div>
 </form>

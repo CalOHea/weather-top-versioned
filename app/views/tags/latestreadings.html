@@ -1,72 +1,72 @@
 #{list items:_station.latestReading(), as:'reading'}
 <div class="columns is-multiline">
-    <div class="column is-half">
-        <div class="content box notification is-dark">
-            <div class="columns">
-                <div class="column">
-                    <p class="subtitle">Weather</p>
-                    <p>${reading.conditions()}</p>
-                </div>
-                <div class="column">
-                    <span class="icon is-large">
-                        <i class="${reading.conditionsIcon()}"></i>
-                    </span>
-                </div>
-            </div>
+  <div class="column is-half">
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Weather</p>
+          <p>${reading.conditions()}</p>
         </div>
-        <div class="content box notification is-dark">
-            <div class="columns">
-                <div class="column">
-                    <p class="subtitle">Temp</p>
-                    <p>${reading.temperature} C</p>
-                    <p>${reading.fahrenheit()} F</p>
-                    <p>Min: ${reading.minTemp()}</p>
-                    <p>Max: ${reading.maxTemp()}</p>
-                </div>
-                <div class="column">
-                    <span class="icon is-large">
-                        <i class="fas fa-solid fa-temperature-half fa-2xl"></i>
-                    </span>
-                </div>
-            </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class="${reading.conditionsIcon()}"></i>
+          </span>
         </div>
+      </div>
     </div>
-    <div class="column is-half">
-        <div class="content box notification is-dark">
-            <div class="columns">
-                <div class="column">
-                    <p class="subtitle">Wind</p>
-                    <p>${reading.beaufort()} bft</p>
-                    <p>${reading.compassDirection()}</p>
-                    <p>Feels Like</p>
-                    <p>${reading.windChill()}</p>
-                    <p>Min: ${reading.minSpeed()}</p>
-                    <p>Max: ${reading.maxSpeed()}</p>
-                </div>
-                <div class="column">
-                    <span class="icon is-large">
-                        <i class="fas fa-solid fa-wind fa-2xl"></i>
-                    </span>
-                </div>
-            </div>
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Temp</p>
+          <p>${reading.temperature} C</p>
+          <p>${reading.fahrenheit()} F</p>
+          <p>Min: ${reading.minTemp()}</p>
+          <p>Max: ${reading.maxTemp()}</p>
         </div>
-    </div>
-    <div class="column is-full">
-        <div class="content box notification is-dark">
-            <div class="columns">
-                <div class="column">
-                    <p class="subtitle">Pressure</p>
-                    <p>${reading.pressure} hpa</p>
-                    <p>Min: ${reading.minPressure()}</p>
-                    <p>Max: ${reading.maxPressure()}</p>
-                </div>
-                <div class="column">
-                    <span class="icon is-large">
-                        <i class="fas fa-solid fa-gauge fa-2xl"></i>
-                    </span>
-                </div>
-            </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class="fas fa-solid fa-temperature-half fa-2xl"></i>
+          </span>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="column is-half">
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Wind</p>
+          <p>${reading.beaufort()} bft</p>
+          <p>${reading.compassDirection()}</p>
+          <p>Feels Like</p>
+          <p>${reading.windChill()}</p>
+          <p>Min: ${reading.minSpeed()}</p>
+          <p>Max: ${reading.maxSpeed()}</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class="fas fa-solid fa-wind fa-2xl"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column is-full">
+    <div class="content box notification is-dark">
+      <div class="columns">
+        <div class="column">
+          <p class="subtitle">Pressure</p>
+          <p>${reading.pressure} hpa</p>
+          <p>Min: ${reading.minPressure()}</p>
+          <p>Max: ${reading.maxPressure()}</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large">
+            <i class="fas fa-solid fa-gauge fa-2xl"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 #{/list}
