@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ae44a73-4c4a-42c7-ad44-db635ff91392" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/dependencies.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/dependencies.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top-versioned.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top-versioned.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684272317956</updated>
-      <workItem from="1684272320026" duration="71942000" />
+      <workItem from="1684272320026" duration="72381000" />
     </task>
     <servers />
   </component>
