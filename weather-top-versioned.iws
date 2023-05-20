@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ae44a73-4c4a-42c7-ad44-db635ff91392" name="Changes" comment="" />
+    <list default="true" id="6ae44a73-4c4a-42c7-ad44-db635ff91392" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/clevercloud/play1_version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/dependencies.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/dependencies.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/dev/projects/playlist-4/playlist.ipr",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dev/projects/playlist-4/playlist.ipr&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.HTML&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\projects\weather-top\weather-top-versioned\app\clevercloud" />
@@ -58,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684272317956</updated>
       <workItem from="1684272320026" duration="73142000" />
+      <workItem from="1684610065529" duration="172000" />
     </task>
     <servers />
   </component>
